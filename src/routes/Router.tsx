@@ -7,6 +7,7 @@ import UserRole from "@/pages/auth/user-role/UserRole";
 import AgentSignUp from "@/pages/auth/agent-signup/AgentSignUp";
 import SignUp from "@/pages/auth/sign-up/SignUp";
 import Verify from "@/pages/auth/verify/Verify";
+import EmailVerificationSuccessful from "@/pages/auth/email-verification-successful/EmailVerificationSuccessful";
 
 export const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ export const router = createBrowserRouter([
       {
         path: "verify",
         element: <Verify />,
+      },
+      {
+        path: "success",
+        element: <EmailVerificationSuccessful />,
       },
     ],
   },
