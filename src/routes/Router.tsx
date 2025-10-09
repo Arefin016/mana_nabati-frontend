@@ -4,6 +4,9 @@ import ErrorPage from "../pages/error/ErrorPage";
 import Dashboard from "../pages/dashboard/Dashboard";
 import SignIn from "../pages/auth/sign-in/SignIn";
 import UserRole from "@/pages/auth/user-role/UserRole";
+import AgentSignUp from "@/pages/auth/agent-signup/AgentSignUp";
+import SignUp from "@/pages/auth/sign-up/SignUp";
+import Verify from "@/pages/auth/verify/Verify";
 
 export const router = createBrowserRouter([
   {
@@ -22,6 +25,18 @@ export const router = createBrowserRouter([
       {
         path: "user-role",
         element: <UserRole />,
+      },
+      {
+        path: "agent-signup",
+        element: <AgentSignUp />,
+      },
+      {
+        path: "sign-up",
+        element: <SignUp />,
+      },
+      {
+        path: "verify",
+        element: <Verify />,
       },
     ],
   },

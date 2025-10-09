@@ -10,9 +10,11 @@ import logo from "../../../assets/logo/final-logo.png";
 import logoText from "../../../assets/logo/inimal.png";
 import { useState } from "react";
 import { toast } from "sonner";
+import { useNavigate } from "react-router";
 
 const UserRole = () => {
   const [selectedRole, setSelectedRole] = useState<string>("");
+  const navigate = useNavigate();
 
   const roles = [
     {
@@ -37,6 +39,11 @@ const UserRole = () => {
     if (selectedRole) {
       localStorage.setItem("userRole", selectedRole);
       console.log("Saved role:", selectedRole);
+      if (selectedRole === "Agency") {
+        navigate("/auth/agent-signup");
+      } else {
+        navigate("/auth/sign-up");
+      }
     } else {
       toast.error("Please select a role before continuing.");
     }

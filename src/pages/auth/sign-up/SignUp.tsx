@@ -14,24 +14,27 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { useForm } from "react-hook-form";
-import { LoginSchema } from "@/schemas/auth/AuthSchema";
-import { Link } from "react-router";
+import { GeneralSignUpSchema } from "@/schemas/auth/AuthSchema";
+import { Link, useNavigate } from "react-router";
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
 
-const SignIn = () => {
+const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
 
-  const form = useForm<z.infer<typeof LoginSchema>>({
-    resolver: zodResolver(LoginSchema),
+  const form = useForm<z.infer<typeof GeneralSignUpSchema>>({
+    resolver: zodResolver(GeneralSignUpSchema),
     defaultValues: {
+      fullName: "",
       email: "",
       password: "",
     },
   });
 
-  function onSubmit(values: z.infer<typeof LoginSchema>) {
+  function onSubmit(values: z.infer<typeof GeneralSignUpSchema>) {
     console.log(values);
+    navigate("/auth/verify");
   }
 
   return (
@@ -41,11 +44,10 @@ const SignIn = () => {
         <div className="flex-1 flex items-center justify-center">
           <div className="w-[560px] mx-auto">
             <h1 className="text-[#212B36] text-[32px] font-bold">
-              Welcome Back 👋
+              Create Your Account
             </h1>
             <p className="text-[#637381] text-base mt-2">
-              Access your dashboard to keep your upcoming bookings <br /> and
-              tours on track.
+              Create your account and centralize every booking detail.
             </p>
             {/* This is login form */}
             <div>
@@ -54,6 +56,25 @@ const SignIn = () => {
                   onSubmit={form.handleSubmit(onSubmit)}
                   className="space-y-5 mt-10"
                 >
+                  <FormField
+                    control={form.control}
+                    name="fullName"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-[#212B36] text-base font-normal">
+                          Full Name
+                        </FormLabel>
+                        <FormControl>
+                          <Input
+                            className="h-12 bg-[#F9FAFB] rounded-[8px] border border-[#DFE3E8]"
+                            placeholder="Enter full name"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
                   <FormField
                     control={form.control}
                     name="email"
@@ -115,7 +136,7 @@ const SignIn = () => {
                     className="bg-[#3F97FF] text-white w-full mt-5 h-12 rounded-[8px] hover:bg-[#3F97FF] hover:opacity-90 cursor-pointer"
                     type="submit"
                   >
-                    Log in
+                    Sign up
                   </Button>
                   {/* Border section */}
                   <div className="flex justify-center items-center gap-4">
@@ -132,12 +153,12 @@ const SignIn = () => {
                   </div>
                   {/* Sign Up Section */}
                   <p className="text-[#294957] text-lg">
-                    Don't you have an account?{" "}
+                    Already have an account?{" "}
                     <Link
-                      to={"/auth/user-role"}
+                      to={"/auth/sign-in"}
                       className="text-[#3F97FF] text-lg"
                     >
-                      Sign up
+                      Log in
                     </Link>
                   </p>
                 </form>
@@ -161,4 +182,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default SignUp;
