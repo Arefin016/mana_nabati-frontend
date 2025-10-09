@@ -22,6 +22,9 @@ import { Eye, EyeOff } from "lucide-react";
 const SignIn = () => {
   const [showPassword, setShowPassword] = useState(false);
 
+  const userRole = localStorage.getItem("userRole");
+  console.log(userRole);
+
   const form = useForm<z.infer<typeof LoginSchema>>({
     resolver: zodResolver(LoginSchema),
     defaultValues: {
@@ -44,8 +47,24 @@ const SignIn = () => {
               Welcome Back 👋
             </h1>
             <p className="text-[#637381] text-base mt-2">
-              Access your dashboard to keep your upcoming bookings <br /> and
-              tours on track.
+              {userRole === "Artist" && (
+                <>
+                  Access your dashboard to keep track of your <br /> upcoming
+                  shows
+                </>
+              )}
+              {userRole === "Agency" && (
+                <>
+                  Access your dashboard to keep your upcoming bookings <br />{" "}
+                  and tours on track.
+                </>
+              )}
+              {userRole === "Promoter" && (
+                <>
+                  Access your dashboard to fill out the Advancing from <br />{" "}
+                  for upcoming events.
+                </>
+              )}
             </p>
             {/* This is login form */}
             <div>

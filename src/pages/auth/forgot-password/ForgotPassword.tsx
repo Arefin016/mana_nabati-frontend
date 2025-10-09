@@ -49,7 +49,10 @@ const ForgotPassword = () => {
         </p>
 
         <Form {...form}>
-          <form className="mt-6" onSubmit={form.handleSubmit(onSubmit)}>
+          <form
+            className="mt-6 text-left"
+            onSubmit={form.handleSubmit(onSubmit)}
+          >
             <FormField
               control={form.control}
               name="email"
