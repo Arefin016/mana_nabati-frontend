@@ -9,6 +9,8 @@ import SignUp from "@/pages/auth/sign-up/SignUp";
 import Verify from "@/pages/auth/verify/Verify";
 import EmailVerificationSuccessful from "@/pages/auth/email-verification-successful/EmailVerificationSuccessful";
 import ForgotPassword from "@/pages/auth/forgot-password/ForgotPassword";
+import UpdatePassword from "@/pages/auth/update-password/UpdatePassword";
+import PasswordUpdate from "@/pages/auth/password-update/PasswordUpdate";
 
 export const router = createBrowserRouter([
   {
@@ -47,6 +49,14 @@ export const router = createBrowserRouter([
       {
         path: "forgot-password",
         element: <ForgotPassword />,
+      },
+      {
+        path: "update-password",
+        element: <UpdatePassword />,
+      },
+      {
+        path: "password-update",
+        element: <PasswordUpdate />,
       },
     ],
   },

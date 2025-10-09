@@ -1,5 +1,5 @@
 import { BackSvg } from "@/icons";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
@@ -17,6 +17,8 @@ import { forgotPasswordSchema } from "@/schemas/auth/AuthSchema";
 import { Button } from "@/components/ui/button";
 
 const ForgotPassword = () => {
+  const navigate = useNavigate();
+
   const form = useForm<z.infer<typeof forgotPasswordSchema>>({
     resolver: zodResolver(forgotPasswordSchema),
     defaultValues: {
@@ -26,6 +28,7 @@ const ForgotPassword = () => {
 
   function onSubmit(values: z.infer<typeof forgotPasswordSchema>) {
     console.log(values);
+    navigate("/auth/update-password");
   }
 
   return (
