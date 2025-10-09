@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { useForm } from "react-hook-form";
-import { LoginSchema } from "@/schemas/auth/LoginSchema";
+import { LoginSchema } from "@/schemas/auth/AuthSchema";
 import { Link } from "react-router";
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
@@ -133,7 +133,10 @@ const SignIn = () => {
                   {/* Sign Up Section */}
                   <p className="text-[#294957] text-lg">
                     Don't you have an account?{" "}
-                    <Link to={"/sign-up"} className="text-[#3F97FF] text-lg">
+                    <Link
+                      to={"/auth/user-role"}
+                      className="text-[#3F97FF] text-lg"
+                    >
                       Sign up
                     </Link>
                   </p>
