@@ -35,7 +35,7 @@ const SignIn = () => {
   }
 
   return (
-    <section className="h-screen overflow-hidden font-publicSans">
+    <section className="h-screen overflow-hidden">
       <div className="flex h-full">
         {/* Left Side */}
         <div className="flex-1 flex items-center justify-center">
