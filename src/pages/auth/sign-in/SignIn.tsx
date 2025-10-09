@@ -106,7 +106,7 @@ const SignIn = () => {
                       </FormItem>
                     )}
                   />
-                  <Link to={"/forgot-password"}>
+                  <Link to={"/auth/forgot-password"}>
                     <p className="flex justify-end text-[#3F97FF] text-base underline cursor-pointer">
                       Forgot Password?
                     </p>

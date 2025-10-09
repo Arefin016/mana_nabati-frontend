@@ -8,6 +8,7 @@ import AgentSignUp from "@/pages/auth/agent-signup/AgentSignUp";
 import SignUp from "@/pages/auth/sign-up/SignUp";
 import Verify from "@/pages/auth/verify/Verify";
 import EmailVerificationSuccessful from "@/pages/auth/email-verification-successful/EmailVerificationSuccessful";
+import ForgotPassword from "@/pages/auth/forgot-password/ForgotPassword";
 
 export const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
       {
         path: "success",
         element: <EmailVerificationSuccessful />,
+      },
+      {
+        path: "forgot-password",
+        element: <ForgotPassword />,
       },
     ],
   },
