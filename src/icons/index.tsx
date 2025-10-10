@@ -547,3 +547,156 @@ export const BackSvg = () => {
     </svg>
   );
 };
+
+// Dashboard Icon
+export const ActiveDashboardSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+    >
+      <path
+        d="M7.5165 2.36664L3.02484 5.86664C2.27484 6.44997 1.6665 7.69164 1.6665 8.63331V14.8083C1.6665 16.7416 3.2415 18.325 5.17484 18.325H14.8248C16.7582 18.325 18.3332 16.7416 18.3332 14.8166V8.74997C18.3332 7.74164 17.6582 6.44997 16.8332 5.87497L11.6832 2.26664C10.5165 1.44997 8.6415 1.49164 7.5165 2.36664Z"
+        stroke="white"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M10 14.9916V12.4916"
+        stroke="white"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const InactiveDashboardSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+    >
+      <path
+        d="M7.5165 2.36664L3.02484 5.86664C2.27484 6.44997 1.6665 7.69164 1.6665 8.63331V14.8083C1.6665 16.7416 3.2415 18.325 5.17484 18.325H14.8248C16.7582 18.325 18.3332 16.7416 18.3332 14.8166V8.74997C18.3332 7.74164 17.6582 6.44997 16.8332 5.87497L11.6832 2.26664C10.5165 1.44997 8.6415 1.49164 7.5165 2.36664Z"
+        stroke="#637381"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M10 14.9917V12.4917"
+        stroke="#637381"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+// event icon
+export const EventSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+    >
+      <path
+        d="M13.3332 1.66669V5.00002M6.6665 1.66669V5.00002"
+        stroke="#637381"
+        stroke-width="1.25"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M10.8333 3.33331H9.16667C6.02397 3.33331 4.45262 3.33331 3.47631 4.30962C2.5 5.28594 2.5 6.85728 2.5 9.99998V11.6666C2.5 14.8093 2.5 16.3807 3.47631 17.357C4.45262 18.3333 6.02397 18.3333 9.16667 18.3333H10.8333C13.976 18.3333 15.5474 18.3333 16.5237 17.357C17.5 16.3807 17.5 14.8093 17.5 11.6666V9.99998C17.5 6.85728 17.5 5.28594 16.5237 4.30962C15.5474 3.33331 13.976 3.33331 10.8333 3.33331Z"
+        stroke="#637381"
+        stroke-width="1.25"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M2.5 8.33331H17.5"
+        stroke="#637381"
+        stroke-width="1.25"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9.1665 11.6667H13.3332M6.6665 11.6667H6.67399M10.8332 15H6.6665M13.3332 15H13.3257"
+        stroke="#637381"
+        stroke-width="1.25"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+//search icon
+export const SearchSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="26"
+      height="24"
+      viewBox="0 0 26 24"
+      fill="none"
+    >
+      <path
+        d="M18.7876 17.8828L23.4172 22.5887"
+        stroke="#454F5B"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M21.1018 10.8235C21.1018 5.62553 16.9563 1.41174 11.8425 1.41174C6.72876 1.41174 2.58325 5.62553 2.58325 10.8235C2.58325 16.0215 6.72876 20.2353 11.8425 20.2353C16.9563 20.2353 21.1018 16.0215 21.1018 10.8235Z"
+        stroke="#454F5B"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+// notification icon
+export const NotificationSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="26"
+      height="26"
+      viewBox="0 0 26 26"
+      fill="none"
+    >
+      <path
+        d="M22.1692 20.5636H3.83084C2.59209 20.5636 1.58789 19.5639 1.58789 18.3308C1.58789 17.7387 1.8242 17.1708 2.24484 16.752L4.12392 14.8816V9.83469C4.12392 4.95496 8.09789 0.999146 13 0.999146C17.9022 0.999146 21.8761 4.95495 21.8761 9.83469V14.8816L23.7552 16.752C24.1758 17.1708 24.4121 17.7387 24.4121 18.3308C24.4121 19.5639 23.4079 20.5636 22.1692 20.5636Z"
+        stroke="#454F5B"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M17.4393 20.5623C17.4393 23.0134 15.4524 25.0005 13.0013 25.0005C10.5502 25.0005 8.56323 23.0134 8.56323 20.5623"
+        stroke="#454F5B"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
