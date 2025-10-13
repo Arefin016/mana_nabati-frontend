@@ -1,8 +1,15 @@
+import ArtistsCard from "@/components/agent-dashboard/artists/ArtistsCard";
+import { artistsData } from "@/data";
+
 const Artists = () => {
   return (
-    <div>
-      <h1>This is the Artists</h1>
-    </div>
+    <section>
+      <div className="grid grid-cols-3 gap-6">
+        {artistsData.map((artist, i) => (
+          <ArtistsCard key={i} {...artist} />
+        ))}
+      </div>
+    </section>
   );
 };
 

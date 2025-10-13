@@ -1,7 +1,9 @@
+import BookedEventListTable from "@/components/agent-dashboard/events/BookedEventListTable";
+
 const Events = () => {
   return (
     <div>
-      <h1>Events</h1>
+      <BookedEventListTable />
     </div>
   );
 };

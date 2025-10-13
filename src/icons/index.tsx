@@ -1133,3 +1133,476 @@ export const ActiveSettingsSvg = () => {
     </svg>
   );
 };
+
+export const UpcomingEventsSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path
+        d="M16 1.99982V5.99982M8 1.99982V5.99982"
+        stroke="#3F97FF"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M13 4.00018H11C7.22876 4.00018 5.34315 4.00018 4.17157 5.17175C3 6.34333 3 8.22894 3 12.0002V14.0002C3 17.7714 3 19.6571 4.17157 20.8286C5.34315 22.0002 7.22876 22.0002 11 22.0002H13C16.7712 22.0002 18.6569 22.0002 19.8284 20.8286C21 19.6571 21 17.7714 21 14.0002V12.0002C21 8.22894 21 6.34333 19.8284 5.17175C18.6569 4.00018 16.7712 4.00018 13 4.00018Z"
+        stroke="#3F97FF"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M3 10.0002H21"
+        stroke="#3F97FF"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M11 13.9998H16M8 13.9998H8.00898M13 17.9998H8M16 17.9998H15.991"
+        stroke="#3F97FF"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const StatisticsSignSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+    >
+      <path
+        d="M10.787 3.33399L5.21362 8.90738M10.7784 7.93771L10.7861 3.33331L6.18311 3.3424"
+        stroke="#0CAF60"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M11.9426 12.6667H4.05859"
+        stroke="#0CAF60"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const StatisticsBarChartsSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="148"
+      height="90"
+      viewBox="0 0 148 90"
+      fill="none"
+    >
+      <rect
+        x="104.096"
+        width="23.9759"
+        height="89.9095"
+        rx="5.99397"
+        fill="url(#paint0_linear_24415_3480)"
+      />
+      <circle cx="116.084" cy="13.1864" r="5.99397" fill="#2F78EE" />
+      <rect
+        x="115.485"
+        y="19.7791"
+        width="1.19879"
+        height="69.53"
+        stroke="url(#paint1_linear_24415_3480)"
+        stroke-width="1.19879"
+        stroke-dasharray="4.8 4.8"
+      />
+      <path
+        d="M34.5916 65.5147C25.9095 45.9983 8.57965 43.1026 1 44.0943V89.91H147.253V8.39354C98.6742 -13.0268 109.01 67.8946 87.8215 75.0347C66.6329 82.1748 64.5657 63.1345 57.3306 56.5894C50.0955 50.0443 40.2764 77.4147 34.5916 65.5147Z"
+        fill="url(#paint2_linear_24415_3480)"
+      />
+      <path
+        d="M1 44.0943C8.57965 43.1026 25.9095 45.9983 34.5916 65.5147C40.2764 77.4147 50.0955 50.0443 57.3306 56.5894C64.5657 63.1345 66.6329 82.1748 87.8215 75.0347C109.01 67.8946 98.6742 -13.0268 147.253 8.39354"
+        stroke="#2F78EE"
+        stroke-width="1.19879"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_24415_3480"
+          x1="116.084"
+          y1="0"
+          x2="116.084"
+          y2="89.9095"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#C1D7FA" />
+          <stop offset="0.936097" stop-color="#C1D7FA" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient
+          id="paint1_linear_24415_3480"
+          x1="116.084"
+          y1="16.8734"
+          x2="116.084"
+          y2="89.9086"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#B2D3F3" />
+          <stop offset="0.739611" stop-color="#A5ADAC" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient
+          id="paint2_linear_24415_3480"
+          x1="73.868"
+          y1="45.2842"
+          x2="73.868"
+          y2="88.72"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#2F78EE" stop-opacity="0.1" />
+          <stop offset="1" stop-color="#2F78EE" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+
+export const EventsCompletedSignSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path
+        d="M5.65796 11.0024L4.18759 14.3107C2.33252 18.4846 1.40498 20.5715 2.41731 21.5839C3.42963 22.5962 5.51658 21.6687 9.69049 19.8136L12.9988 18.3432C15.5162 17.2244 16.7749 16.6649 16.9752 15.5862C17.1755 14.5075 16.2015 13.5335 14.2536 11.5856L12.4156 9.74758C10.4676 7.79962 9.49365 6.82564 8.41494 7.02593C7.33623 7.22622 6.77681 8.48493 5.65796 11.0024Z"
+        stroke="#3F97FF"
+        stroke-width="1.35"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M6.5 10.5L13.5 17.5M4.5 15.5L8.5 19.5"
+        stroke="#3F97FF"
+        stroke-width="1.35"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M16 7.99982L19 4.99982"
+        stroke="#3F97FF"
+        stroke-width="1.35"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M14.1973 1.99982C14.5963 2.66649 14.9156 4.39982 13 5.99982"
+        stroke="#3F97FF"
+        stroke-width="1.35"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M22 9.80256C21.3333 9.40347 19.6 9.0842 18 10.9998"
+        stroke="#3F97FF"
+        stroke-width="1.35"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M18.001 1.99982V2.01982"
+        stroke="#3F97FF"
+        stroke-width="1.35"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M22.0007 6V6.02"
+        stroke="#3F97FF"
+        stroke-width="1.35"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M21.001 13.0002V13.0202"
+        stroke="#3F97FF"
+        stroke-width="1.35"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M11.001 3V3.02"
+        stroke="#3F97FF"
+        stroke-width="1.35"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const BookingRequestsSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="146"
+      height="87"
+      viewBox="0 0 146 87"
+      fill="none"
+    >
+      <rect
+        x="47.1482"
+        y="14.0152"
+        width="23.6658"
+        height="72.1806"
+        rx="5.91644"
+        fill="url(#paint0_linear_24415_3541)"
+      />
+      <circle cx="58.9811" cy="27.0309" r="5.91644" fill="#E03137" />
+      <rect
+        x="58.3893"
+        y="33.5394"
+        width="1.18329"
+        height="52.0647"
+        stroke="url(#paint1_linear_24415_3541)"
+        stroke-width="1.18329"
+        stroke-dasharray="4.73 4.73"
+      />
+      <path
+        d="M16.3033 7.5021C8.95772 -11.7114 3.04044 16.189 1 32.5409V86.1954H145.361V69.3326C130.058 83.6405 111.184 36.1178 102.512 44.8047C80.5772 70.3545 74.9659 56.5576 71.3952 51.9587C67.8244 47.3597 62.7233 16.6999 52.5211 29.4748C42.3189 42.2497 42.829 25.8978 36.1976 31.5188C22.4246 43.7827 25.4853 31.5189 16.3033 7.5021Z"
+        fill="url(#paint2_linear_24415_3541)"
+      />
+      <path
+        d="M1 32.5409C3.04044 16.189 8.95772 -11.7114 16.3033 7.5021C25.4853 31.5189 22.4246 43.7827 36.1976 31.5188C42.829 25.8978 42.3189 42.2497 52.5211 29.4748C62.7233 16.6999 67.8244 47.3597 71.3952 51.9587C74.9659 56.5576 80.5772 70.3545 102.512 44.8047C111.184 36.1178 130.058 83.6405 145.361 69.3326"
+        stroke="#E03137"
+        stroke-width="1.18329"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_24415_3541"
+          x1="58.9811"
+          y1="14.0152"
+          x2="58.9811"
+          y2="86.1958"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#FDDBDC" />
+          <stop offset="0.90824" stop-color="white" />
+        </linearGradient>
+        <linearGradient
+          id="paint1_linear_24415_3541"
+          x1="58.9809"
+          y1="31.2114"
+          x2="58.9809"
+          y2="86.1957"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#FDCACB" />
+          <stop offset="0.739611" stop-color="#A5ADAC" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient
+          id="paint2_linear_24415_3541"
+          x1="72.9255"
+          y1="28.4528"
+          x2="73.1814"
+          y2="86.1954"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#E03137" stop-opacity="0.1" />
+          <stop offset="1" stop-color="#E03137" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+
+export const TotalArtistSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="25"
+      height="25"
+      viewBox="0 0 25 25"
+      fill="none"
+    >
+      <path
+        d="M11.8445 11.4793C11.8445 9.27017 13.6354 7.47931 15.8445 7.47931C18.0536 7.47931 19.8445 9.27017 19.8445 11.4793C19.8445 13.6884 18.0536 15.4793 15.8445 15.4793C13.6354 15.4793 11.8445 13.6884 11.8445 11.4793Z"
+        stroke="#3F97FF"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9.84399 21.4791C9.84399 18.1654 12.5303 15.4791 15.844 15.4791C19.1577 15.4791 21.844 18.1654 21.844 21.4791"
+        stroke="#3F97FF"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        opacity="0.4"
+        d="M9.84448 11.4791C7.63538 11.4791 5.84448 9.68827 5.84448 7.47913C5.84448 5.26999 7.63538 3.47913 9.84448 3.47913C12.0536 3.47913 13.8445 5.26999 13.8445 7.47913C13.8445 7.6684 13.8314 7.8546 13.8059 8.03686M9.84448 11.4791C10.5891 11.4791 11.2861 11.2757 11.8831 10.9214M9.84448 11.4791C6.53078 11.4791 3.84448 14.1654 3.84448 17.4791"
+        stroke="#3F97FF"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const DeleteSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+    >
+      <path
+        d="M9.7356 2.80254L10.2592 3.9448H11.9485C12.4678 3.9448 12.8889 4.36585 12.8889 4.88524V5.58169C12.8889 5.93679 12.601 6.22466 12.2459 6.22466H3.43327C3.07815 6.22466 2.79028 5.93679 2.79028 5.58169V4.88524C2.79028 4.36585 3.21133 3.9448 3.73072 3.9448H5.41995L5.9436 2.80254C6.10074 2.45975 6.44324 2.23999 6.82033 2.23999H8.85886C9.23595 2.23999 9.57841 2.45975 9.7356 2.80254Z"
+        stroke="#637381"
+        stroke-width="1.44"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M11.9041 6.27252V11.8314C11.9041 12.8967 11.0512 13.7603 9.9991 13.7603H5.68113C4.62903 13.7603 3.77612 12.8967 3.77612 11.8314V6.27252"
+        stroke="#637381"
+        stroke-width="1.44"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M6.75854 8.52246V11.4078M8.922 8.52246V11.4078"
+        stroke="#637381"
+        stroke-width="1.44"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const EditSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="14"
+      height="14"
+      viewBox="0 0 14 14"
+      fill="none"
+    >
+      <path
+        d="M8.16479 12.6286H12.9999"
+        stroke="#637381"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M7.52001 1.52986C8.0371 0.911858 8.96666 0.821237 9.59748 1.32782C9.63236 1.35531 10.753 2.22586 10.753 2.22586C11.446 2.64479 11.6613 3.5354 11.2329 4.21506C11.2102 4.25146 4.87463 12.1763 4.87463 12.1763C4.66385 12.4393 4.34389 12.5945 4.00194 12.5982L1.57569 12.6287L1.02902 10.3149C0.952442 9.98953 1.02902 9.64785 1.2398 9.3849L7.52001 1.52986Z"
+        stroke="#637381"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M6.34692 3.00061L9.98175 5.79203"
+        stroke="#637381"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const RecentIconSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+    >
+      <path
+        d="M6.25 8.75L10 12.5L13.75 8.75"
+        stroke="#637381"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ArtistSignSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="15"
+      height="14"
+      viewBox="0 0 15 14"
+      fill="none"
+    >
+      <path
+        d="M0.626145 12.2929C0.235621 12.6834 0.235621 13.3166 0.626145 13.7071C1.01667 14.0976 1.64983 14.0976 2.04036 13.7071L1.33325 13L0.626145 12.2929ZM14.3333 1C14.3333 0.447716 13.8855 4.87118e-07 13.3333 2.34237e-07L4.33325 1.03503e-06C3.78097 6.97852e-07 3.33325 0.447716 3.33325 1C3.33325 1.55229 3.78097 2 4.33325 2L12.3333 2L12.3333 10C12.3333 10.5523 12.781 11 13.3333 11C13.8855 11 14.3333 10.5523 14.3333 10L14.3333 1ZM1.33325 13L2.04036 13.7071L14.0404 1.70711L13.3333 1L12.6261 0.292894L0.626145 12.2929L1.33325 13Z"
+        fill="#C4CDD5"
+      />
+    </svg>
+  );
+};
+
+export const MobileSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="12"
+      height="12"
+      viewBox="0 0 12 12"
+      fill="none"
+    >
+      <path
+        d="M4.57913 2.85612L4.3778 2.40313C4.24616 2.10694 4.18034 1.95884 4.0819 1.8455C3.95854 1.70347 3.79773 1.59897 3.61784 1.54393C3.47429 1.5 3.31223 1.5 2.9881 1.5C2.51395 1.5 2.27688 1.5 2.07786 1.59115C1.84343 1.69851 1.63172 1.93164 1.54736 2.1753C1.47575 2.38215 1.49627 2.59472 1.53729 3.01985C1.97395 7.54508 4.45491 10.026 8.98013 10.4627C9.40528 10.5037 9.61788 10.5242 9.82468 10.4526C10.0684 10.3683 10.3015 10.1566 10.4089 9.92213C10.5 9.72313 10.5 9.48603 10.5 9.01188C10.5 8.68778 10.5 8.52573 10.4561 8.38218C10.401 8.20228 10.2965 8.04148 10.1545 7.91808C10.0412 7.81968 9.89308 7.75383 9.59688 7.62218L9.14388 7.42088C8.82313 7.27833 8.66273 7.20703 8.49978 7.19153C8.34378 7.17668 8.18653 7.19858 8.04053 7.25543C7.88798 7.31483 7.75318 7.42718 7.48348 7.65193C7.21508 7.87558 7.08088 7.98743 6.91688 8.04733C6.77148 8.10048 6.57928 8.12013 6.42618 8.09758C6.25343 8.07213 6.12118 8.00143 5.85663 7.86008C5.03363 7.42023 4.57976 6.96638 4.13993 6.14338C3.99857 5.87883 3.92789 5.74658 3.90243 5.57383C3.87987 5.42073 3.89954 5.22853 3.95265 5.08313C4.01256 4.91914 4.1244 4.78493 4.34809 4.5165C4.57281 4.24684 4.68517 4.11201 4.74457 3.95946C4.80142 3.81347 4.82331 3.6562 4.80847 3.50024C4.79297 3.33726 4.72169 3.17688 4.57913 2.85612Z"
+        stroke="#637381"
+        stroke-linecap="round"
+      />
+    </svg>
+  );
+};
+
+export const AddressSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="12"
+      height="12"
+      viewBox="0 0 12 12"
+      fill="none"
+    >
+      <path
+        d="M7.75 5.5C7.75 6.4665 6.9665 7.25 6 7.25C5.0335 7.25 4.25 6.4665 4.25 5.5C4.25 4.5335 5.0335 3.75 6 3.75C6.9665 3.75 7.75 4.5335 7.75 5.5Z"
+        stroke="#637381"
+      />
+      <path
+        d="M6 1C8.4353 1 10.5 3.01649 10.5 5.4629C10.5 7.94825 8.40165 9.69235 6.4635 10.8784C6.32225 10.9581 6.1625 11 6 11C5.8375 11 5.67775 10.9581 5.5365 10.8784C3.60195 9.6808 1.5 7.95685 1.5 5.4629C1.5 3.01649 3.56472 1 6 1Z"
+        stroke="#637381"
+      />
+    </svg>
+  );
+};
