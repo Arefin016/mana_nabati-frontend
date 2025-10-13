@@ -1,7 +1,24 @@
 import { NavLink } from "react-router";
 import logo from "../../assets/logo/final-logo.png";
 import logoText from "../../assets/logo/inimal.png";
-import { ActiveDashboardSvg, InactiveDashboardSvg } from "@/icons";
+import {
+  ActiveAiAssistantSvg,
+  ActiveArtistsSvg,
+  ActiveDashboardSvg,
+  ActiveEventSvg,
+  ActiveProfileSvg,
+  ActivePromotersSvg,
+  ActiveSettingsSvg,
+  ActiveStatisticsSvg,
+  InActiveAiAssistantSvg,
+  InactiveArtistsSvg,
+  InactiveDashboardSvg,
+  InactiveEventSvg,
+  InActiveProfileSvg,
+  InactivePromotersSvg,
+  InactiveSettingsSvg,
+  InactiveStatisticsSvg,
+} from "@/icons";
 
 const Sidebar = () => {
   const userRole = localStorage.getItem("userRole");
@@ -50,7 +67,7 @@ const Sidebar = () => {
             >
               {({ isActive }) => (
                 <>
-                  {isActive ? <ActiveDashboardSvg /> : <InactiveDashboardSvg />}
+                  {isActive ? <ActiveEventSvg /> : <InactiveEventSvg />}
                   <span>Events</span>
                 </>
               )}
@@ -67,7 +84,7 @@ const Sidebar = () => {
             >
               {({ isActive }) => (
                 <>
-                  {isActive ? <ActiveDashboardSvg /> : <InactiveDashboardSvg />}
+                  {isActive ? <ActiveArtistsSvg /> : <InactiveArtistsSvg />}
                   <span>Artists</span>
                 </>
               )}
@@ -84,7 +101,7 @@ const Sidebar = () => {
             >
               {({ isActive }) => (
                 <>
-                  {isActive ? <ActiveDashboardSvg /> : <InactiveDashboardSvg />}
+                  {isActive ? <ActivePromotersSvg /> : <InactivePromotersSvg />}
                   <span>Promoters</span>
                 </>
               )}
@@ -101,7 +118,11 @@ const Sidebar = () => {
             >
               {({ isActive }) => (
                 <>
-                  {isActive ? <ActiveDashboardSvg /> : <InactiveDashboardSvg />}
+                  {isActive ? (
+                    <ActiveStatisticsSvg />
+                  ) : (
+                    <InactiveStatisticsSvg />
+                  )}
                   <span>Statistics</span>
                 </>
               )}
@@ -118,7 +139,7 @@ const Sidebar = () => {
             >
               {({ isActive }) => (
                 <>
-                  {isActive ? <ActiveDashboardSvg /> : <InactiveDashboardSvg />}
+                  {isActive ? <ActiveSettingsSvg /> : <InactiveSettingsSvg />}
                   <span>Settings</span>
                 </>
               )}
@@ -192,9 +213,9 @@ const Sidebar = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `flex items-center gap-2 mt-10 text-lg font-medium p-2 rounded ${
+                `flex items-center gap-4 mt-10 text-lg font-medium p-2 rounded-[8px] ${
                   isActive
-                    ? "bg-blue-500 text-white"
+                    ? "bg-[#3F97FF] text-white"
                     : "text-[#294957] hover:text-[#3F97FF]"
                 }`
               }
@@ -206,25 +227,27 @@ const Sidebar = () => {
                 </>
               )}
             </NavLink>
-
             <NavLink
               to="/ai-assistant"
               className={({ isActive }) =>
-                `flex items-center gap-2 mt-10 text-lg font-medium p-2 rounded ${
+                `flex items-center gap-4 mt-10 text-lg font-medium p-2 rounded-[8px] ${
                   isActive
-                    ? "bg-blue-500 text-white"
+                    ? "bg-[#3F97FF] text-white"
                     : "text-[#294957] hover:text-[#3F97FF]"
                 }`
               }
             >
               {({ isActive }) => (
                 <>
-                  {isActive ? <ActiveDashboardSvg /> : <InactiveDashboardSvg />}
+                  {isActive ? (
+                    <ActiveAiAssistantSvg />
+                  ) : (
+                    <InActiveAiAssistantSvg />
+                  )}
                   <span>AI Assistant</span>
                 </>
               )}
             </NavLink>
-
             <NavLink
               to="/profile"
               className={({ isActive }) =>
@@ -237,7 +260,7 @@ const Sidebar = () => {
             >
               {({ isActive }) => (
                 <>
-                  {isActive ? <ActiveDashboardSvg /> : <InactiveDashboardSvg />}
+                  {isActive ? <ActiveProfileSvg /> : <InActiveProfileSvg />}
                   <span>Profile</span>
                 </>
               )}
