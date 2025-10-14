@@ -131,12 +131,12 @@ const statusStyles: Record<Event["status"], string> = {
   Cancelled: "bg-red-100 text-[#E03137]",
 };
 
-const BookedEventListTable = () => {
+const PromotersTable = () => {
   return (
     <div className="bg-white p-6 rounded-[8px] w-full">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-semibold text-[#212B36]">
-          Booked Event List
+          Promoter Directory
         </h2>
         <button className="text-sm text-gray-500 border border-[#F4F6F8] rounded px-3 py-1 hover:bg-gray-50 flex items-center gap-1">
           Recent
@@ -149,25 +149,19 @@ const BookedEventListTable = () => {
           <thead className="border-b bg-[#F9FAFB]">
             <tr>
               <th className="py-3 px-4 text-[#212B36] text-base font-normal">
-                Event Name
+                Name
               </th>
               <th className="py-3 px-4 text-[#212B36] text-base font-normal">
-                Artist Name
+                Contact Number
               </th>
               <th className="py-3 px-4 text-[#212B36] text-base font-normal">
-                Promoter
+                Email
               </th>
               <th className="py-3 px-4 text-[#212B36] text-base font-normal">
-                Venue
+                Company
               </th>
               <th className="py-3 px-4 text-[#212B36] text-base font-normal">
-                Date & Time
-              </th>
-              <th className="py-3 px-4 text-[#212B36] text-base font-normal">
-                Sales
-              </th>
-              <th className="py-3 px-4 text-[#212B36] text-base font-normal">
-                Status
+                Rating
               </th>
               <th className="py-3 px-4 text-[#212B36] text-base font-normal">
                 Action
@@ -230,4 +224,4 @@ const BookedEventListTable = () => {
   );
 };
 
-export default BookedEventListTable;
+export default PromotersTable;
