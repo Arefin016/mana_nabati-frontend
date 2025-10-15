@@ -299,8 +299,7 @@ export default function RunningOrder() {
           <div className="flex justify-end pt-6">
             <Button
               type="submit"
-              disabled
-              className="bg-gray-200 text-gray-500 rounded-[8px] h-11 w-[160px] cursor-not-allowed"
+              className="bg-gray-200 text-gray-500 rounded-[8px] h-11 w-[160px]"
             >
               Confirm Booking
             </Button>
