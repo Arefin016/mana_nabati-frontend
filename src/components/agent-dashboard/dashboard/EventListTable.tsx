@@ -1,5 +1,5 @@
 import { DeleteSvg, EditSvg, RecentIconSvg } from "@/icons";
-import { useState } from "react";
+// import { useState } from "react";
 
 interface Event {
   id: string;
@@ -111,13 +111,13 @@ const statusStyles: Record<Event["status"], string> = {
 };
 
 const EventListTable = () => {
-  const [selected, setSelected] = useState<string[]>([]);
+  // const [selected, setSelected] = useState<string[]>([]);
 
-  const toggleSelect = (id: string) => {
-    setSelected((prev) =>
-      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
-    );
-  };
+  // const toggleSelect = (id: string) => {
+  //   setSelected((prev) =>
+  //     prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
+  //   );
+  // };
 
   return (
     <div className="bg-white p-6 rounded-[8px] max-w-[1180px] w-full">
@@ -133,9 +133,9 @@ const EventListTable = () => {
         <table className="w-full text-left text-sm text-gray-600 rounded-[8px]">
           <thead className="border-b bg-[#F9FAFB]">
             <tr>
-              <th className="py-3 px-4">
+              {/* <th className="py-3 px-4">
                 <input type="checkbox" />
-              </th>
+              </th> */}
               <th className="py-3 px-4 text-[#212B36] text-base font-normal">
                 Event Name
               </th>
@@ -169,13 +169,13 @@ const EventListTable = () => {
                 key={event.id}
                 className="border-b hover:bg-gray-50 transition-colors"
               >
-                <td className="py-3 px-4">
+                {/* <td className="py-3 px-4">
                   <input
                     type="checkbox"
                     checked={selected.includes(event.id)}
                     onChange={() => toggleSelect(event.id)}
                   />
-                </td>
+                </td> */}
 
                 <td className="py-3 px-4">
                   <div>
@@ -209,7 +209,7 @@ const EventListTable = () => {
                   </span>
                 </td>
 
-                <td className="py-3 px-4">
+                <td className="py-3 px-4 flex">
                   <button className="border border-[#F4F6F8] p-1 rounded mr-2 cursor-pointer">
                     <DeleteSvg />
                   </button>
