@@ -1,5 +1,6 @@
 import Header from "@/components/dashboard/Header";
 import Sidebar from "@/components/dashboard/Sidebar";
+import Modals from "@/components/Modal";
 import { Outlet } from "react-router";
 
 const MainLayout = () => {
@@ -14,6 +15,8 @@ const MainLayout = () => {
           </div>
         </div>
       </div>
+
+      <Modals />
     </div>
   );
 };

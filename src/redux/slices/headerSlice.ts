@@ -16,13 +16,18 @@ const headerSlice = createSlice({
   name: "header",
   initialState,
   reducers: {
-    setTitle: (state, action: PayloadAction<HeaderState>) => {
+    setHeader: (state, action: PayloadAction<HeaderState>) => {
       state.title = action.payload.title;
       state.isAddBtn = action.payload.isAddBtn;
       state.desc = action.payload.desc;
     },
+    resetTitle: (state) => {
+      state.title = "Dashboard";
+      state.isAddBtn = false;
+      state.desc = "Welcome back, Andrei";
+    },
   },
 });
 
-export const { setTitle } = headerSlice.actions;
+export const { setHeader, resetTitle } = headerSlice.actions;
 export default headerSlice.reducer;
