@@ -14,7 +14,7 @@ const AgentDashboardEventCalendar = () => {
       day: "Sat",
       date: "3",
       event: "The Midnight Hour",
-      dj: "DJ Nova",
+      artist: "DJ Nova",
       hashtag: "#BK-2024123",
       time: "10:00 PM-12:00 PM",
     },
@@ -22,7 +22,7 @@ const AgentDashboardEventCalendar = () => {
       day: "Sun",
       date: "4",
       event: "The Midnight Hour",
-      dj: "DJ Nova",
+      artist: "DJ Nova",
       hashtag: "#BK-2024123",
       time: "10:00 PM-12:00 PM",
     },
@@ -30,7 +30,7 @@ const AgentDashboardEventCalendar = () => {
       day: "Mon",
       date: "7",
       event: "The Midnight Hour",
-      dj: "DJ Nova",
+      artist: "DJ Nova",
       hashtag: "#BK-2024123",
       time: "10:00 PM-12:00 PM",
     },
@@ -38,7 +38,7 @@ const AgentDashboardEventCalendar = () => {
       day: "Mon",
       date: "7",
       event: "The Midnight Hour",
-      dj: "DJ Nova",
+      artist: "DJ Nova",
       hashtag: "#BK-2024123",
       time: "10:00 PM-12:00 PM",
     },
@@ -70,7 +70,7 @@ const AgentDashboardEventCalendar = () => {
             <div className="flex-1 mx-4">
               <div className="text-[15px] font-medium text-gray-900">
                 {event.event}{" "}
-                <span className="text-gray-500">• {event.dj}</span>
+                <span className="text-gray-500">• {event.artist}</span>
               </div>
               <div className="text-xs text-gray-400 mt-1">{event.hashtag}</div>
             </div>
