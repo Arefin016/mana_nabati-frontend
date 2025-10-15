@@ -37,8 +37,9 @@ export default function EventDetails() {
   }, [dispatch]);
 
   return (
-    <section className="bg-white p-6 rounded-[8px] w-full">
-      <div className="w-full">
+    <section className="bg-white rounded-[8px] w-full relative">
+      {/* Fixed Tabs */}
+      <div className="sticky top-0 z-30 bg-white px-6 py-3 border-b border-gray-100">
         <AnimatedTabs
           tabs={tabs}
           onChange={(tabId) => {
@@ -48,7 +49,8 @@ export default function EventDetails() {
         />
       </div>
 
-      <div className="py-10 px-20">
+      {/* Scrollable Content */}
+      <div className="py-8 px-20 overflow-y-auto">
         {activeTab === "Running_Order" && <RunningOrder />}
         {activeTab === "Confirm_Rider" && <ConfirmRider />}
         {activeTab === "Travel_Information" && <TravelInformation />}
