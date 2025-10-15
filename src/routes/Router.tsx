@@ -26,6 +26,7 @@ import PromotorSettings from "@/pages/promotor-dashboard/PromotorSettings";
 import ArtistDashboard from "@/pages/artist-dashboard/ArtistDashboard";
 import AiAssistant from "@/pages/artist-dashboard/AiAssistant";
 import Profile from "@/pages/artist-dashboard/Profile";
+import EventDetails from "@/pages/agent-dashboard/EventDetails";
 
 const userRole = localStorage.getItem("userRole");
 
@@ -40,6 +41,7 @@ if (userRole === "Agency") {
       children: [
         { index: true, element: <AgentDashboard /> },
         { path: "events", element: <Events /> },
+        { path: "events/:eventId", element: <EventDetails /> },
         { path: "artists", element: <Artists /> },
         { path: "promoters", element: <Promoters /> },
         { path: "statistics", element: <Statistics /> },
