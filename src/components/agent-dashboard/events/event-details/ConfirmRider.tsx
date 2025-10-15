@@ -1,5 +1,3 @@
-"use client";
-
 import { useState, useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 import { Button } from "@/components/ui/button";
@@ -170,7 +168,7 @@ export default function ConfirmRider() {
   );
 
   return (
-    <section className="space-y-10">
+    <section className="space-y-10 max-w-7xl mx-auto">
       {renderSection(
         "Hospitality Rider (DJ Show)",
         hospitalityFiles,
