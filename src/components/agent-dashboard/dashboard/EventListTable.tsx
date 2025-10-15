@@ -209,7 +209,7 @@ const EventListTable = () => {
                   </span>
                 </td>
 
-                <td className="py-3 px-4">
+                <td className="py-3 px-4 flex">
                   <button className="border border-[#F4F6F8] p-1 rounded mr-2 cursor-pointer">
                     <DeleteSvg />
                   </button>

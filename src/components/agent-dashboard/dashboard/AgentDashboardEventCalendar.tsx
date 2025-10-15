@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { type DateRange } from "react-day-picker";
 import { DateRangeCalendar } from "./DateRangeCalendar";
+import { Clock } from "lucide-react";
 
 const AgentDashboardEventCalendar = () => {
   const [dateRange, setDateRange] = useState<DateRange | undefined>({
@@ -8,7 +9,6 @@ const AgentDashboardEventCalendar = () => {
     to: new Date(2025, 5, 26),
   });
 
-  // Mock event data
   const events = [
     {
       day: "Sat",
@@ -16,7 +16,7 @@ const AgentDashboardEventCalendar = () => {
       event: "The Midnight Hour",
       dj: "DJ Nova",
       hashtag: "#BK-2024123",
-      time: "10:00 PM - 12:00 PM",
+      time: "10:00 PM-12:00 PM",
     },
     {
       day: "Sun",
@@ -24,7 +24,7 @@ const AgentDashboardEventCalendar = () => {
       event: "The Midnight Hour",
       dj: "DJ Nova",
       hashtag: "#BK-2024123",
-      time: "10:00 PM - 12:00 PM",
+      time: "10:00 PM-12:00 PM",
     },
     {
       day: "Mon",
@@ -32,7 +32,7 @@ const AgentDashboardEventCalendar = () => {
       event: "The Midnight Hour",
       dj: "DJ Nova",
       hashtag: "#BK-2024123",
-      time: "10:00 PM - 12:00 PM",
+      time: "10:00 PM-12:00 PM",
     },
     {
       day: "Mon",
@@ -40,38 +40,45 @@ const AgentDashboardEventCalendar = () => {
       event: "The Midnight Hour",
       dj: "DJ Nova",
       hashtag: "#BK-2024123",
-      time: "10:00 PM - 12:00 PM",
+      time: "10:00 PM-12:00 PM",
     },
   ];
 
   return (
-    <div className="bg-white p-6 rounded-[8px] max-w-[1180px] w-full">
+    <div className="bg-white p-6 rounded-lg max-w-[1180px] w-full">
       <DateRangeCalendar
         mode="range"
         defaultMonth={dateRange?.from}
         selected={dateRange}
         onSelect={setDateRange}
       />
-      {/* Events Section */}
-      <div className="mt-4 flex flex-col gap-4">
+
+      {/* Events List */}
+      <div className="mt-6 flex flex-col gap-3">
         {events.map((event, index) => (
           <div
             key={index}
-            className="p-3 rounded-lg flex items-center justify-between"
+            className="flex items-center justify-between border-b border-gray-100 pb-3"
           >
-            <div className="bg-primary01 px-4 py-2 rounded-md text-primary-foreground flex flex-col items-center">
-              <div className="font-semibold">{event.date}</div>
-              <div className="font-semibold">{event.day}</div>
+            {/* Date Box */}
+            <div className="bg-blue-600 text-white rounded-md w-12 h-12 flex flex-col justify-center items-center leading-tight">
+              <div className="text-base font-semibold">{event.date}</div>
+              <div className="text-xs font-medium">{event.day}</div>
             </div>
-            <div className="text-center flex-1 mx-4">
-              <div className="text-sm">
-                {event.event} · {event.dj}
+
+            {/* Event Info */}
+            <div className="flex-1 mx-4">
+              <div className="text-[15px] font-medium text-gray-900">
+                {event.event}{" "}
+                <span className="text-gray-500">• {event.dj}</span>
               </div>
-              <div className="text-xs text-gray-200">{event.hashtag}</div>
+              <div className="text-xs text-gray-400 mt-1">{event.hashtag}</div>
             </div>
-            <div className="text-sm text-right">
-              <div>⏰</div>
-              <div>{event.time}</div>
+
+            {/* Time */}
+            <div className="text-xs text-gray-500 flex items-center gap-1">
+              <Clock className="w-3.5 h-3.5" />
+              <span>{event.time}</span>
             </div>
           </div>
         ))}
