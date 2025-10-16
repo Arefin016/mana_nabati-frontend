@@ -20,7 +20,7 @@ export const FormInput = <TFieldValues extends FieldValues>({
     name={name}
     render={({ field }) => (
       <FormItem>
-        <FormLabel className="text-xs text-gray-500">{label}</FormLabel>
+        <FormLabel className="text-sm text-gray-500">{label}</FormLabel>
         <FormControl>
           <Input
             {...field}
