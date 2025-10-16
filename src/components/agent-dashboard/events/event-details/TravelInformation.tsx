@@ -1,4 +1,4 @@
-import { useForm } from "react-hook-form";
+import { useForm, useFieldArray } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form } from "@/components/ui/form";
@@ -30,14 +30,9 @@ export default function TravelInformation() {
           role: "Tour Manager",
         },
         {
-          name: "Celina Aoun",
-          phoneNumber: "+971553594146",
-          role: "Tour Manager",
-        },
-        {
-          name: "Celina Aoun",
-          phoneNumber: "+971553594146",
-          role: "Tour Manager",
+          name: "Alex Smith",
+          phoneNumber: "+971500000000",
+          role: "Assistant",
         },
       ],
       artistContact: {
@@ -46,6 +41,12 @@ export default function TravelInformation() {
         email: "djnova@gmail.com",
       },
     },
+  });
+
+  // ✅ useFieldArray hook for dynamic member management
+  const { fields, append } = useFieldArray({
+    control: form.control,
+    name: "travelingParty",
   });
 
   function onSubmit(values: z.infer<typeof TravelInfoSchema>) {
@@ -73,7 +74,6 @@ export default function TravelInformation() {
                     label="To"
                   />
                 </div>
-
                 <div className="grid grid-cols-2 gap-4">
                   <FormInput
                     control={form.control}
@@ -105,7 +105,6 @@ export default function TravelInformation() {
                     label="To"
                   />
                 </div>
-
                 <div className="grid grid-cols-2 gap-4">
                   <FormInput
                     control={form.control}
@@ -126,9 +125,9 @@ export default function TravelInformation() {
           <div>
             <h2 className="text-[20px] font-semibold mb-4">Traveling Party</h2>
             <div className="space-y-4">
-              {form.watch("travelingParty").map((_, index) => (
+              {fields.map((field, index) => (
                 <div
-                  key={index}
+                  key={field.id}
                   className="grid grid-cols-1 md:grid-cols-3 gap-4"
                 >
                   <FormInput
@@ -153,8 +152,11 @@ export default function TravelInformation() {
                   type="button"
                   variant="ghost"
                   className="text-primary01 cursor-pointer"
+                  onClick={() =>
+                    append({ name: "", phoneNumber: "", role: "" })
+                  }
                 >
-                  <Plus /> Add Member
+                  <Plus className="w-4 h-4 mr-1" /> Add Member
                 </Button>
               </div>
             </div>
@@ -185,12 +187,16 @@ export default function TravelInformation() {
           {/* Buttons */}
           <div className="flex justify-end gap-4">
             <Button
+              type="submit"
               variant="default"
               className="bg-primary01/80 hover:bg-primary01/70 text-white rounded-[8px] h-11 px-6"
             >
               Save
             </Button>
-            <Button className="bg-[#DFE3E8] text-[#919EAB] rounded-[8px] h-11 px-6">
+            <Button
+              type="button"
+              className="bg-[#DFE3E8] text-[#919EAB] rounded-[8px] h-11 px-6"
+            >
               Confirm Booking
             </Button>
           </div>

@@ -8,11 +8,13 @@ const RowSchema = z.object({
   artist: z.string(),
 });
 
+// Running order Schema
 export const RunningOrderSchema = z.object({
   mainStage: z.array(RowSchema),
   secondaryStage: z.array(RowSchema),
 });
 
+// Travel information Schema
 export const TravelInfoSchema = z.object({
   travelIn: z.object({
     from: z.string(),
@@ -38,4 +40,34 @@ export const TravelInfoSchema = z.object({
     phoneNumber: z.string(),
     email: z.string().optional(),
   }),
+});
+
+// Guest list Schema
+export const GuestListSchema = z.object({
+  allocation: z.object({
+    aaa: z.string().or(z.number()).optional(),
+    vip: z.string().or(z.number()).optional(),
+    ga: z.string().or(z.number()).optional(),
+  }),
+  aaaGuests: z.array(
+    z.object({
+      name: z.string().optional(),
+      phoneNumber: z.string().optional(),
+      role: z.string().optional(),
+    })
+  ),
+  vipGuests: z.array(
+    z.object({
+      name: z.string().optional(),
+      phoneNumber: z.string().optional(),
+      role: z.string().optional(),
+    })
+  ),
+  gaGuests: z.array(
+    z.object({
+      name: z.string().optional(),
+      phoneNumber: z.string().optional(),
+      role: z.string().optional(),
+    })
+  ),
 });
